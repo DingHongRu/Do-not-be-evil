@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class T{
+	public static void main(String[] args){
+		Scanner in=new Scanner(System.in);
+		double sum=0;
+		double Point=0;
+		double avg=0;
+		for(int i=1;i<=9;i++){
+			System.out.println("第"+i+"科成绩：");
+			int score=in.nextInt();
+			System.out.println("第"+i+"科学分：");
+			double point=in.nextDouble();
+			sum=sum+score*point;
+			Point=Point+point;
+		}
+		avg=sum/Point;
+		System.out.println("加权平均分为："+avg);
+	}
+}
